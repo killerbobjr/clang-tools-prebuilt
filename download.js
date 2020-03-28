@@ -13,8 +13,7 @@ module.exports = (opts, cb) => {
   if (!platform) return cb(new Error('must specify platform'))
   if (!revision) return cb(new Error('must specify revision'))
   const filename = 'clang-tools-r' + revision + '-' + platform + '.tgz'
-  const url = 'https://github.com/hokein/clang-tools-tarball/releases/download/r' +
-              revision + '/clang-tools-r' + revision + '-' + platform + '.tgz'
+  const url = 'https://ziglang.org/deps/llvm%2bclang%2blld-10.0.0-x86_64-windows-msvc-release-mt.tar.xz'
   const homeDir = homePath()
   const cache = path.join(homeDir, './.clang-tools')
 
