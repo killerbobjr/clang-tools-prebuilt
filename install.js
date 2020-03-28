@@ -18,7 +18,8 @@ const platform = os.platform()
 const platforms = {
   darwin: 'mac',
   linux: 'linux',
-  freebsd: 'linux'
+  freebsd: 'linux',
+  win32: 'win32'
 }
 
 if (!platforms[platform]) throw new Error('Unknown platform: ' + platform)
