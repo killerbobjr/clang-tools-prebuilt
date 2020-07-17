@@ -38,7 +38,7 @@ download({
       return
     }
     console.log("unziping " + file_path)
-    var cmd = 'tar -xzf ' + file_path + ' -C ' + dest
+	var	cmd = '7z x ' + file_path + ' -so | 7z x -si -ttar -o' + dest;
     exec(cmd, (error, stdout, stderr) => {
       if (error) {
         console.log(stderr)
